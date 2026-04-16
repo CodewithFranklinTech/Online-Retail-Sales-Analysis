@@ -18,23 +18,23 @@ The insights generated from this analysis help highlight seasonal sales behavior
 Source: Online Retail Dataset (CSV file obtained from Kaggle)
 The dataset contains 406,829 rows and 8 original variables, representing transactional records from an online retail store. Each row corresponds to a single product purchased within a transaction.
 Original Dataset Variables:
-•	InvoiceNo – Unique transaction identifier 
-•	StockCode – Unique product code 
-•	Description – Name or description of the product 
-•	Quantity – Number of units purchased in a transaction 
-•	InvoiceDate – Date and time when the transaction occurred 
-•	UnitPrice – Price per unit of the product 
-•	CustomerID – Unique identifier for each customer 
-•	Country – Country where the customer is located 
+•	InvoiceNo: Unique transaction identifier 
+•	StockCode: Unique product code 
+•	Description: Name or description of the product 
+•	Quantity: Number of units purchased in a transaction 
+•	InvoiceDate: Date and time when the transaction occurred 
+•	UnitPrice: Price per unit of the product 
+•	CustomerID: Unique identifier for each customer 
+•	Country: Country where the customer is located 
 
 # Engineered Variables (Created During Analysis)
 To support the sales analysis, additional variables were created using R:
-•	purchase_amount – Total revenue per transaction (Quantity × UnitPrice) 
-•	purchase_year – Year of purchase extracted from InvoiceDate 
-•	month_purchase – Month of purchase extracted from InvoiceDate 
-•	year_month – Monthly time period used for sales trend analysis 
-•	total_orders – Total number of orders within a time period 
-•	average_order_value – Average revenue per order (total_revenue ÷ total_orders) 
+•	purchase_amount: Total revenue per transaction (Quantity × UnitPrice) 
+•	purchase_year: Year of purchase extracted from InvoiceDate 
+•	month_purchase: Month of purchase extracted from InvoiceDate 
+•	year_month: Monthly time period used for sales trend analysis 
+•	total_orders: Total number of orders within a time period 
+•	average_order_value: Average revenue per order (total_revenue ÷ total_orders) 
 These engineered features enable deeper analysis of revenue trends, customer behavior, and seasonal sales patterns.
 
 # Data Cleaning
@@ -67,24 +67,31 @@ The analysis was guided by the following key business questions:
 Charts were created using ggplot2 to show: Monthly Revenue Trend. Monthly Active Customers. Total Revenue by Month. Top 10 Products by Revenue. Top 10 Countries by Total Revenue. Top 10 Customers by Revenue. Average Order Value Over Time
 
 ![Monthly Revenue Trend](Monthly_Revenue_Trend.png) 
+
 The chart illustrates the total monthly revenue generated during 2011. Revenue fluctuates in the early months but increases significantly toward the end of the year, showing strong sales growth. The final drop may indicate partial data for the last month.
 
 ![Monthly Active Customers](Monthly_Active_Customers.png) 
+
 This chart shows the number of unique customers purchasing each month. Customer activity generally increases toward the later months of the year, suggesting growing engagement. However, there is a sharp drop in the final month, which may indicate incomplete data or reduced activity.
 
 ![Total Revenue by Month](Total_Revenue_by_Month.png) 
+
 This horizontal bar chart displays the total revenue generated for each month of the year. Revenue shows a clear upward trend from the beginning of the year, with the highest earnings recorded in November and December. This pattern suggests strong seasonal demand during the festive period, which could be useful for planning inventory and marketing campaigns.
 
 ![Top 10 Products by Revenue](Top_10_Products_by_Revenue1.png) 
+
 This chart ranks the top 10 products contributing the most to overall revenue. It shows that items such as PAPER CRAFT, LITTLE BIRDIE and REGENCY CAKESTAND 3 TIER are among the best performers, with several party and home décor products also appearing prominently. Understanding these top-performing products helps identify popular categories and supports better decisions on stock replenishment and product promotion.
 
 ![Top 10 Countries by Total Revenue](Top_10_Countries_by_Total_Revenue.png) 
+
 This chart highlights the geographic distribution of revenue. The United Kingdom generates the highest total revenue by a significant margin, followed by other European countries such as the Netherlands, EIRE, and Germany. This indicates that the United Kingdom is the company’s primary market.
 
 ![Top 10 Customers by Revenue](Top_10_Customers_by_Revenue.png) 
+
 The top 10 customers chart identifies the customers contributing the most to overall revenue, enabling targeted customer relationship management and the development of loyalty programs.
 
 ![Average Order Value Over Time](Average_Order_Value_Over_Time.png) 
+
 This chart shows how the average order value changed each month in 2011. The values fluctuate throughout the year but remain mostly between 20 and 25, indicating relatively stable customer spending per order. A noticeable increase appears toward the end of the year.
 
 # Conclusion and Recommendation
