@@ -100,4 +100,4 @@ Based on these findings, the company should prioritize targeted marketing campai
 
 # Author
 Franklin Chisom  
-Data Analyst | Aspiring Data Scientist | R Enthusiast
+Data Analyst | SQL, Python, Power BI, & R Enthusiast
